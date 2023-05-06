@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+
+    --button-bg-color: #E74646;
+    --bg-color: #FFF3E2;
+    --bg-block: #FA9884;
+    --bg-alt: #FFE5CA;
+    --text-color: #FFF3E2;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+
+    background: var(--bg-color) ;
+    color: var(--text-color);
+}
+ p, h1, h2 {
+    margin: 0;
+ }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container p {
+    margin-top: 10px;
+}
+
+h1, h2 {
+    color: var(--bg-alt);
+}
+
+
+/* About */
+
+.ava {
+    display: inline-block;
+    align-self: start;
+}
+.ava img {
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 13px 13px 26px -7px rgba(0,0,0,0.63);
+}
+
+.details {
+    display: inline-block;
+}
+
+.block {
+    background: var(--bg-block);
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-top: 20px;
+    box-shadow: 13px 13px 26px -20px rgba(0,0,0,0.63);
+}
+
+.about {
+    font-style: italic;
+    display: flex;
+    gap: 40px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .about{
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Hobbies */
+
+.hobbies ui {
+margin: 0;
+  padding: 0;
+}
+
+.hobbies li {
+    list-style: none;
+    padding: 5px 10px;
+
+    border-bottom: 1px solid var(--button-bg-color);
+}
+
+/* Exp */
+
+.exp table {
+    width: 100%;
+}
+
+.exp table td {
+    text-align: center;
+}
+.exp table tr:nth-child(even) {
+    background-color: var(--button-bg-color);
+}
+
+/* Form */
+
+.form {
+    font: inherit;
+}
+
+.form input, .form textarea {
+    font: inherit;
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--button-bg-color);
+    padding: 10px 40px;
+    outline: none;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+.form textarea {
+    resize: none;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: var(--text-color);
+}
+
+.form label {
+    font: inherit;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.field {
+    width: 49%;
+    display: inline-block;
+}
+
+/* Button  */
+
+.btn {
+    font: inherit;
+    font-style: normal;
+    /* font-family: inherit; */
+    padding: 10px 20px;
+    margin: 5px 5px 0 5px;    
+    background-color: var(--button-bg-color);
+    border-radius: 10px;
+    color: var(--button-text-color);
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.btn:hover {
+    background-color: var(--bg-alt);
+    color: var(--button-bg-color);
+    transition-duration: .5s;
+}
+
+.btn:active {
+    background-color: var(--button-color-active);
+}
+
+a:visited {
+    background-color: var(--button-bg-color);
+}
